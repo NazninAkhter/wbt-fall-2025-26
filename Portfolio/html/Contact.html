@@ -2,38 +2,42 @@
 <html>
 
 <head>
-
+    <link rel="stylesheet" href="/wbt-fall-2025-26/Portfolio/css/contact.css">
 </head>
 
 <body>
-    <form>
-        <lable for="Firstname">First Name :</lable>
+    <form id="form">
+        <h2>Contact Me</h2>
+        First Name :
         <input type="text" id="Firstname" name="firstname" required><br>
         <br>
-        <lable for="Lastname">Last Name :</lable>
+        Last Name :
         <input type="text" id="Lastname" name="lastname" required><br>
         <br>
-        <lable for="Email">Email Address :</lable>
+        Email Address :
         <input type="email" id="Email" name="email" required><br>
         <br>
         Company :<input type="text"> <br>
         <br>
-        <label for="reason to contact">Reason For Contact :</label>
+        Reason For Contact :
         <input type="radio" id="project" name="reason to contact" vale="thesis" required>
-        <label for="thesis">Thesis </label>
-        <input type="radio" id="female" name="reason to contact" value="project" required>
-        <label for="project">Project</label>
+        Thesis
+        <input type="radio" id="project" name="reason to contact" value="project" required>
+        Project
         <input type="radio" id="other" name="reason to contact" value="job" required>
-        <label for="job">Job</label>
-        <br>
+        Job<br>
         <br>
         Service to Provide :<br>
+        <br>
         <input type="checkbox" required>Web Development<br>
+        <br>
         <input type="checkbox" required>Mobile Application Development<br>
+        <br>
         <input type="checkbox" required>Software Development<br>
-
-        <label for="book an appointment">Book An Appointment:</label>
+        <br>
+        Book An Appointment:
         <input type="date" id="book an appointment" name="book an appointment" required>
+        <br>
         <br>
         <button type="submit" value="submit" name="submit">Submit </button>
         <button type="reset" value="reset" name="reset"> Reset</button>
