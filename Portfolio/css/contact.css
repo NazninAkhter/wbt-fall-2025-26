@@ -15,39 +15,45 @@ body {
 form {
     display: inline-block;
     text-align: left;
-    background-color: white;
+    background-color: rgb(208, 239, 246);
     padding: 20px 30px;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
+
+form div {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+
+form label {
+
+    white-space: nowrap;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="date"] {
-    display: block;
-    max-width: 300px;
+    width: 250px;
+    max-width: 100%;
     padding: 8px 10px;
-    margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    flex-shrink: 1;
 }
 
-button {
-    padding: 8px 16px;
-    margin: 10px 5px;
-    border: none;
-    color: white;
-    background-color: #033b69;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: opacity 0.2s ease;
-}
+@media (max-width: 500px) {
 
-button[type="reset"] {
-    background-color: #f44336;
-}
-
-button:hover {
-    opacity: 0.9;
+    input[type="text"],
+    input[type="email"],
+    input[type="date"] {
+        width: 200px;
+    }
 }

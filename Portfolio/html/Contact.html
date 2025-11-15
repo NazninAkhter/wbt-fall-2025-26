@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -8,42 +8,65 @@
 <body>
     <form id="form">
         <h2>Contact Me</h2>
-        First Name :
-        <input type="text" id="Firstname" name="firstname" required><br>
-        <br>
-        Last Name :
-        <input type="text" id="Lastname" name="lastname" required><br>
-        <br>
-        Email Address :
-        <input type="email" id="Email" name="email" required><br>
-        <br>
-        Company :<input type="text"> <br>
-        <br>
-        Reason For Contact :
-        <input type="radio" id="project" name="reason to contact" vale="thesis" required>
-        Thesis
-        <input type="radio" id="project" name="reason to contact" value="project" required>
-        Project
-        <input type="radio" id="other" name="reason to contact" value="job" required>
-        Job<br>
-        <br>
-        Service to Provide :<br>
-        <br>
-        <input type="checkbox" required>Web Development<br>
-        <br>
-        <input type="checkbox" required>Mobile Application Development<br>
-        <br>
-        <input type="checkbox" required>Software Development<br>
-        <br>
-        Book An Appointment:
-        <input type="date" id="book an appointment" name="book an appointment" required>
-        <br>
-        <br>
-        <button type="submit" value="submit" name="submit">Submit </button>
-        <button type="reset" value="reset" name="reset"> Reset</button>
 
+        <div>
+            <label for="Firstname">First Name :</label>
+            <input type="text" id="Firstname" name="firstname" required>
+        </div>
+
+        <div>
+            <label for="Lastname">Last Name :</label>
+            <input type="text" id="Lastname" name="lastname" required>
+        </div>
+
+        <div>
+            <label for="Email">Email Address :</label>
+            <input type="email" id="Email" name="email" required>
+        </div>
+
+        <div>
+            <label for="company">Company :</label>
+            <input type="text" id="company" name="company">
+        </div>
+
+        <div>
+            <label>Reason For Contact :</label>
+            <div class="radio-group">
+                <input type="radio" id="thesis" name="reason_to_contact" value="thesis" required>
+                <label for="thesis">Thesis</label>
+
+                <input type="radio" id="project" name="reason_to_contact" value="project" required>
+                <label for="project">Project</label>
+
+                <input type="radio" id="job" name="reason_to_contact" value="job" required>
+                <label for="job">Job</label>
+            </div>
+        </div>
+
+        <div>
+            <label>Service to Provide :</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="webdev" name="service" value="webdev" required>
+                <label for="webdev">Web Development</label>
+
+                <input type="checkbox" id="mobiledev" name="service" value="mobiledev" required>
+                <label for="mobiledev">Mobile Application Development</label>
+
+                <input type="checkbox" id="softdev" name="service" value="softdev" required>
+                <label for="softdev">Software Development</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="appointment">Book An Appointment:</label>
+            <input type="date" id="appointment" name="appointment" required>
+        </div>
+
+        <div>
+            <button type="submit" name="submit">Submit</button>
+            <button type="reset" name="reset">Reset</button>
+        </div>
     </form>
-
 </body>
 
 </html>
