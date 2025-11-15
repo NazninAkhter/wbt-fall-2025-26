@@ -9,63 +9,79 @@
     <form id="form">
         <h2>Contact Me</h2>
 
-        <div>
+        <div class="form-row">
             <label for="Firstname">First Name :</label>
             <input type="text" id="Firstname" name="firstname" required>
         </div>
 
-        <div>
+        <div class="form-row">
             <label for="Lastname">Last Name :</label>
             <input type="text" id="Lastname" name="lastname" required>
         </div>
 
-        <div>
+        <div class="form-row">
             <label for="Email">Email Address :</label>
             <input type="email" id="Email" name="email" required>
         </div>
 
-        <div>
+        <div class="form-row">
             <label for="company">Company :</label>
             <input type="text" id="company" name="company">
         </div>
 
-        <div>
+
+        <div class="form-row">
             <label>Reason For Contact :</label>
             <div class="radio-group">
-                <input type="radio" id="thesis" name="reason_to_contact" value="thesis" required>
-                <label for="thesis">Thesis</label>
+                <div class="option">
+                    <input type="radio" id="thesis" name="reason_to_contact" value="thesis" required>
+                    <label for="thesis">Thesis</label>
+                </div>
 
-                <input type="radio" id="project" name="reason_to_contact" value="project" required>
-                <label for="project">Project</label>
+                <div class="option">
+                    <input type="radio" id="project" name="reason_to_contact" value="project" required>
+                    <label for="project">Project</label>
+                </div>
 
-                <input type="radio" id="job" name="reason_to_contact" value="job" required>
-                <label for="job">Job</label>
+                <div class="option">
+                    <input type="radio" id="job" name="reason_to_contact" value="job" required>
+                    <label for="job">Job</label>
+                </div>
             </div>
         </div>
 
-        <div>
+
+        <div class="form-row">
             <label>Service to Provide :</label>
             <div class="checkbox-group">
-                <input type="checkbox" id="webdev" name="service" value="webdev" required>
-                <label for="webdev">Web Development</label>
+                <div class="option">
+                    <input type="checkbox" id="webdev" name="service" value="webdev">
+                    <label for="webdev">Web Development</label>
+                </div>
 
-                <input type="checkbox" id="mobiledev" name="service" value="mobiledev" required>
-                <label for="mobiledev">Mobile Application Development</label>
+                <div class="option">
+                    <input type="checkbox" id="mobiledev" name="service" value="mobiledev">
+                    <label for="mobiledev">Mobile Application Development</label>
+                </div>
 
-                <input type="checkbox" id="softdev" name="service" value="softdev" required>
-                <label for="softdev">Software Development</label>
+                <div class="option">
+                    <input type="checkbox" id="softdev" name="service" value="softdev">
+                    <label for="softdev">Software Development</label>
+                </div>
             </div>
         </div>
 
-        <div>
+        <div class="form-row">
             <label for="appointment">Book An Appointment:</label>
             <input type="date" id="appointment" name="appointment" required>
         </div>
 
-        <div>
+        <!-- Buttons -->
+        <div class="form-row buttons">
             <button type="submit" name="submit">Submit</button>
             <button type="reset" name="reset">Reset</button>
         </div>
+
     </form>
 </body>
 
